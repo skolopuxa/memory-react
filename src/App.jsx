@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Button from './components/Button/Button'
+import Grid from './components/Grid/Grid'
 
 function App() {
   return (
@@ -12,11 +13,14 @@ function App() {
       </header>
       <main>
         контент
-        <Button title="заказать" color="red"/>
+        <Button title="заказать" color="red" />
         <Button title="купить" color="green" />
-        <Button title="Войти" color="blue"/>
+        <Button title="Войти" color="blue" />
 
         <button>моя кнопка</button>
+
+        <Grid />
+
       </main>
       <footer>
         <p>&copy; Ивлева Кира, 2026</p>
