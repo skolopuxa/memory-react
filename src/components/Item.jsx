@@ -1,7 +1,11 @@
-export default function Item()
-{
-    return(
+import images from "../data.json"
+import { useParams } from "react-router-dom";
+export default function Item() {
+    const param = useParams()
+    const image = images[param.id]
+    return (
         <>
-        картинка отдельная</>
+            <img className="item" src={image.url} alt="" />
+        </>
     )
 }
